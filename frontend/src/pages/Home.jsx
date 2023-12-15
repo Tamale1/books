@@ -20,7 +20,7 @@ const Home = () => {
         axios
           .get('http://localhost:2222/books')
           .then((res) => {
-            setBooks(res.data.data);
+            setBooks(res.data.books);
             setLoading(false);
           })
           .catch((error) => {
